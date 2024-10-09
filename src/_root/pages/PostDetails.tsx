@@ -34,7 +34,7 @@ const PostDetails = () => {
                   <p className="base-medium lg:body-bold text-light-1">
                     {post?.creator.name}
                   </p>
-                  <div className="flex-center gap-2 text-light-3">
+                  <div className="flex-center gap-2 text-orange-200">
                     <p className="subtle-semibold lg:small-regular">
                       {formatDateString(post?.$createdAt)}
                     </p>
@@ -63,7 +63,7 @@ const PostDetails = () => {
               <p>{post?.caption}</p>
               <ul className="flex gap-1 mt-2">
                 {post?.tags.map((tag: string) => (
-                  <li key={tag} className="text-light-3">
+                  <li key={tag} className="text-orange-200">
                     #{tag}
                   </li>
                 ))}

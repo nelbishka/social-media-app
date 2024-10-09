@@ -18,7 +18,7 @@ const SearchResults = ({isSearchFetching, searchedPosts}: SearchResultsProps) =>
     }
 
   return (
-    <p className="text-light-4 mt-10 text-center w-full">No results found</p>
+    <p className="text-orange-200 mt-10 text-center w-full">No results found</p>
   )
 }
 

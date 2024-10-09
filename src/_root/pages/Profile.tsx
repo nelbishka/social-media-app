@@ -20,7 +20,7 @@ interface StabBlockProps {
 
 const StatBlock = ({ value, label }: StabBlockProps) => (
   <div className="flex-center gap-2">
-    <p className="small-semibold lg:body-bold text-primary-500">{value}</p>
+    <p className="small-semibold lg:body-bold text-light-2">{value}</p>
     <p className="small-medium lg:base-medium text-light-2">{label}</p>
   </div>
 );
@@ -55,7 +55,7 @@ const Profile = () => {
               <h1 className="text-center xl:text-left h3-bold md:h1-semibold w-full">
                 {currentUser.name}
               </h1>
-              <p className="small-regular md:body-medium text-light-3 text-center xl:text-left">
+              <p className="small-regular md:body-medium text-orange-300 text-center xl:text-left">
                 @{currentUser.username}
               </p>
             </div>

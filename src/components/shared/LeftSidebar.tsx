@@ -23,7 +23,7 @@ const LeftSidebar = () => {
             <div className="flex flex-col gap-11">
                 <Link to='/' className="flex gap-3 items-center">
                     <img
-                        src="/assets/images/logo.svg"
+                        src="/assets/images/horizontal-logo.png"
                         alt='logo'
                         width={170}
                         height={36}
@@ -40,7 +40,7 @@ const LeftSidebar = () => {
                         <p className="body-bold">
                             {user.name}
                         </p>
-                        <p className="small-regular text-light-3">
+                        <p className="small-regular text-orange-200">
                             @{user.username}
                         </p>
                     </div>
@@ -51,7 +51,7 @@ const LeftSidebar = () => {
                         const isActive = pathname === link.route;
                         return (
                             <li key={link.label} className={`leftsidebar-link group ${
-                                isActive && 'bg-primary-500'
+                                isActive && 'bg-orange-400'
                             }`}>
                                 <NavLink 
                                 to={link.route} 
